@@ -1,0 +1,181 @@
+.hero {
+  padding: 8rem 2rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.heroContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.heroTagline {
+  font-size: 1.1rem;
+  color: #444;
+  margin: 0 0 2rem 0;
+  line-height: 1.6;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.primaryButton {
+  background-color: #2563eb;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background-color 0.2s;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.primaryButton:hover {
+  background-color: #1d4ed8;
+  text-decoration: none;
+  color: white;
+}
+
+.secondaryButton {
+  background-color: transparent;
+  color: #2563eb;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background-color 0.2s;
+  border: 2px solid #2563eb;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.secondaryButton:hover {
+  background-color: #eff6ff;
+  text-decoration: none;
+}
+
+.heroImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookCover {
+  width: 280px;
+  height: 360px;
+  background: linear-gradient(145deg, #1e40af, #3730a3);
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.bookCover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.coverContent {
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  z-index: 1;
+}
+
+.coverContent h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  line-height: 1.3;
+}
+
+.coverContent p {
+  font-size: 1rem;
+  margin: 0;
+  opacity: 0.9;
+}
+
+@media (max-width: 996px) {
+  .hero {
+    padding: 3rem 1.5rem 1.5rem;
+  }
+
+  .heroContainer {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .bookCover {
+    width: 220px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem 1rem 1rem;
+  }
+
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroButtons {
+    flex-direction: column;
+  }
+
+  .primaryButton, .secondaryButton {
+    width: 100%;
+  }
+}
