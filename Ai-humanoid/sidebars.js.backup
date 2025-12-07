@@ -1,0 +1,137 @@
+/**
+ * Creating a sidebar enables you to:
+ * - Create an ordered group of docs
+ * - Render a sidebar for each doc of that group
+ * - Say "id" to specify the docs object "id" property
+ *
+ * It can be rendered either as a string or a more advanced object.
+ *
+ * Docs at https://docusaurus.io/docs/sidebar
+ */
+
+// @ts-check
+
+/** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
+const sidebars = {
+  tutorialSidebar: [
+    'intro',
+    {
+      type: 'category',
+      label: 'Module 1 — The Robotic Nervous System (ROS 2)',
+      items: [
+        {
+          type: 'category',
+          label: 'Chapter 1: Introduction to ROS2',
+          items: [
+            'Module1-The-Robotic-Nervous-System-ROS2/Chapter1-Introduction-to-ROS2/index',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Chapter 2: Nodes, Topics, Services, and Actions',
+          items: [
+            'Module1-The-Robotic-Nervous-System-ROS2/Chapter2-NodesTopicsServiceAction/index',
+            'Module1-The-Robotic-Nervous-System-ROS2/Chapter2-NodesTopicsServiceAction/1-2.1-Nodes',
+            'Module1-The-Robotic-Nervous-System-ROS2/Chapter2-NodesTopicsServiceAction/1-2.2-Topics',
+            'Module1-The-Robotic-Nervous-System-ROS2/Chapter2-NodesTopicsServiceAction/1-2.3-Services',
+            'Module1-The-Robotic-Nervous-System-ROS2/Chapter2-NodesTopicsServiceAction/1-2.4-Actions',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Chapter 3: Python Agents with rclpy',
+          items: [
+            'Module1-The-Robotic-Nervous-System-ROS2/Chapter3-PythonAgentsWithRclpy/index',
+            'Module1-The-Robotic-Nervous-System-ROS2/Chapter3-PythonAgentsWithRclpy/1-3.1-NodeCreation',
+            'Module1-The-Robotic-Nervous-System-ROS2/Chapter3-PythonAgentsWithRclpy/1-3.2-PublishSubscribe',
+            'Module1-The-Robotic-Nervous-System-ROS2/Chapter3-PythonAgentsWithRclpy/1-3.3-Services',
+            'Module1-The-Robotic-Nervous-System-ROS2/Chapter3-PythonAgentsWithRclpy/1-3.4-Actions',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Chapter 4: Launch Files, Parameters, and Lifecycle Nodes',
+          items: [
+            'Module1-The-Robotic-Nervous-System-ROS2/Chapter4-LaunchParamsLifecycle',
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Module 2 — Digital Twin',
+      items: [
+        {
+          type: 'category',
+          label: 'Chapter 1: Physics Simulation',
+          items: [
+            'Module2-Digital-Twin/Chapter1-PhysicsSimulation/index',
+            'Module2-Digital-Twin/Chapter1-PhysicsSimulation/1.1-IntroPhysicsSimulation',
+            'Module2-Digital-Twin/Chapter1-PhysicsSimulation/1.2-SimulatingPhysicsGazebo',
+            'Module2-Digital-Twin/Chapter1-PhysicsSimulation/1.3-UnityRendering',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Chapter 2: Gazebo Physics',
+          items: [
+            'Module2-Digital-Twin/Chapter2-GazeboPhysics/2.1-Introduction-to-Physics-in-Gazebo',
+            'Module2-Digital-Twin/Chapter2-GazeboPhysics/2.2-Gravity-and-Inertial-Properties',
+            'Module2-Digital-Twin/Chapter2-GazeboPhysics/2.3-Collision-Detection',
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Module 3 — The AI-Robot Brain (NVIDIA Isaac™)',
+      items: [
+        {
+          type: 'category',
+          label: 'Chapter 1: Focus Advanced perception and training',
+          items: [
+            'Module3-AI-Robot-Brain/Chapter1-Focus-Advanced-perception-and-training/2-1.4-overview-of-isaac-platform',
+            'Module3-AI-Robot-Brain/Chapter1-Focus-Advanced-perception-and-training/3-1.1-architecture-and-components',
+            'Module3-AI-Robot-Brain/Chapter1-Focus-Advanced-perception-and-training/3-1.3-development-environment-setup',
+            'Module3-AI-Robot-Brain/Chapter1-Focus-Advanced-perception-and-training/3-1.3-first-isaac-project',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Chapter 2: Nav2 Path planning for bipedal humanoid movement',
+          items: [
+            'Module3-AI-Robot-Brain/Chapter2-Nav2-Path-planning-for-bipedal-humanoid-movement/dnn-inference-with-isaac-ros',
+            'Module3-AI-Robot-Brain/Chapter2-Nav2-Path-planning-for-bipedal-humanoid-movement/introduction-to-isaac-ros',
+            'Module3-AI-Robot-Brain/Chapter2-Nav2-Path-planning-for-bipedal-humanoid-movement/isaac-ros-common-packages',
+            'Module3-AI-Robot-Brain/Chapter2-Nav2-Path-planning-for-bipedal-humanoid-movement/performance-optimization',
+            'Module3-AI-Robot-Brain/Chapter2-Nav2-Path-planning-for-bipedal-humanoid-movement/setting-up-isaac-ros-workspace',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Chapter 3: NVIDIA Isaac Sim Photorealistic simulation and synthetic data generation',
+          items: [
+            'Module3-AI-Robot-Brain/Chapter3-NVIDIA-Isaac-Sim-Photorealistic-simulation-and-synthetic-data-generation/advanced-scene-creation',
+            'Module3-AI-Robot-Brain/Chapter3-NVIDIA-Isaac-Sim-Photorealistic-simulation-and-synthetic-data-generation/building-simulation-environments',
+            'Module3-AI-Robot-Brain/Chapter3-NVIDIA-Isaac-Sim-Photorealistic-simulation-and-synthetic-data-generation/introduction-to-isaac-sim',
+            'Module3-AI-Robot-Brain/Chapter3-NVIDIA-Isaac-Sim-Photorealistic-simulation-and-synthetic-data-generation/physics-simulation',
+            'Module3-AI-Robot-Brain/Chapter3-NVIDIA-Isaac-Sim-Photorealistic-simulation-and-synthetic-data-generation/sensor-simulation',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Chapter 4: Isaac ROS Hardware-accelerated VSLAM (Visual SLAM) and navigation',
+          items: [
+            'Module3-AI-Robot-Brain/Chapter4-saac-ROS-Hardware-accelerated-VSLAM-Visual-SLAM-and-navigation/data-generation-pipelines',
+            'Module3-AI-Robot-Brain/Chapter4-saac-ROS-Hardware-accelerated-VSLAM-Visual-SLAM-and-navigation/dataset-export-and-management',
+            'Module3-AI-Robot-Brain/Chapter4-saac-ROS-Hardware-accelerated-VSLAM-Visual-SLAM-and-navigation/domain-randomization',
+            'Module3-AI-Robot-Brain/Chapter4-saac-ROS-Hardware-accelerated-VSLAM-Visual-SLAM-and-navigation/ground-truth-and-annotations',
+            'Module3-AI-Robot-Brain/Chapter4-saac-ROS-Hardware-accelerated-VSLAM-Visual-SLAM-and-navigation/importance-of-synthetic-data',
+          ],
+        },
+      ],
+    },
+  ],
+};
+
+module.exports = sidebars;
