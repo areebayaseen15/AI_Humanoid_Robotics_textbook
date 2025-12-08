@@ -1,0 +1,8 @@
+fastapi
+pydantic
+mangum
+python-dotenv
+cohere
+qdrant-client
+agents  # your agents library
+trafilatura
