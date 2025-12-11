@@ -5,24 +5,24 @@ const config = {
   title: 'Physical AI & Humanoid Robotics Textbook',
   tagline:
     'An open-source, AI-augmented textbook for physical AI and humanoid robotics, leveraging Claude agents for dynamic content generation, personalization, and RAG-driven interactions.',
+  favicon: '/img/favicon.webp',  // leading slash!
   
-  // ✅ FIXED URL & BASE
-  url: 'https://aihumanoidtextbook.vercel.app',
-  baseUrl: '/',
-  trailingSlash: false,
+  // Set the production url of your site here
+  
+  url: 'https://areebayaseen15.github.io',
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
+  baseUrl: '/AI_Humanoid_Robotics_textbook',
+  onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
 
-  onBrokenLinks: 'ignore',
-  markdown: {
-    mermaid: true,
-    hooks: {
-      onBrokenMarkdownLinks: 'warn',
-    },
-  },
-  favicon: 'img/favicon.webp',
+   // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: 'areebayaseen15/', // Usually your GitHub org/user name.
+  projectName: 'AI_Humanoid_Robotics_textbook', // Usually your repo name.
 
-  // GitHub pages deployment config
-  organizationName: 'claude-code-hackathon', // GitHub org/user
-  projectName: 'robotic-book', // Repo name
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'throw',
 
   i18n: {
     defaultLocale: 'en',
@@ -45,7 +45,7 @@ const config = {
             'https://github.com/areebayaseen15/Ai-Humanoid-textbook/edit/main/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.css'), // ensure this file exists
         },
       }),
     ],
@@ -54,12 +54,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/logo.webp',
+      image: '/img/logo.webp', // leading slash
       navbar: {
         title: 'Physical AI & Humanoid Robotics Textbook',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.webp',
+          src: '/img/logo.webp', // leading slash
         },
         items: [
           {
@@ -110,7 +110,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics Textbook, All Rights Reserved.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics Textbook. All Rights Reserved.`,
       },
       prism: {
         theme: prismThemes.github,
