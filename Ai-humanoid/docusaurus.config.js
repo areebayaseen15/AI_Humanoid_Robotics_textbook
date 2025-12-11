@@ -1,13 +1,17 @@
-
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'Physical AI & Humanoid Robotics Textbook',
-  tagline: 'An open-source, AI-augmented textbook for physical AI and humanoid robotics, leveraging Claude agents for dynamic content generation, personalization, and RAG-driven interactions.',
-  url: 'https://aihumanoidtextbook.vercel.app/',
+  title: 'Physical AI & Humanoid Robotics Textbook',
+  tagline:
+    'An open-source, AI-augmented textbook for physical AI and humanoid robotics, leveraging Claude agents for dynamic content generation, personalization, and RAG-driven interactions.',
+  
+  // ✅ FIXED URL & BASE
+  url: 'https://aihumanoidtextbook.vercel.app',
   baseUrl: '/',
-  onBrokenLinks: 'warn',
+  trailingSlash: false,
+
+  onBrokenLinks: 'ignore',
   markdown: {
     mermaid: true,
     hooks: {
@@ -15,19 +19,15 @@ const config = {
     },
   },
   favicon: 'img/favicon.webp',
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'claude-code-hackathon', // Usually your GitHub org/user name.
-  projectName: 'robotic-book', // Usually your repo name.
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
+
+  // GitHub pages deployment config
+  organizationName: 'claude-code-hackathon', // GitHub org/user
+  projectName: 'robotic-book', // Repo name
+
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
-  
 
   presets: [
     [
@@ -35,15 +35,17 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/areebayaseen15/Ai-Humanoid-textbook/edit/main/',
+          sidebarPath: require.resolve('./sidebars.js'),
+          editUrl:
+            'https://github.com/areebayaseen15/Ai-Humanoid-textbook/edit/main/',
         },
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/areebayaseen15/Ai-Humanoid-textbook/edit/main/',
+          editUrl:
+            'https://github.com/areebayaseen15/Ai-Humanoid-textbook/edit/main/',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],
@@ -71,20 +73,6 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
-//           {
-//             type: 'localeDropdown',
-//             position: 'right',
-//             i18n: {
-//   defaultLocale: 'en',
-//   locales: ['en', 'ur'],
-//   localeConfigs: {
-//     ur: {
-//       label: 'اردو',
-//       direction: 'rtl',
-//     },
-//   },
-// },
-//           },
         ],
       },
       footer: {
@@ -102,7 +90,6 @@ const config = {
           {
             title: 'Social Profiles',
             items: [
-             
               {
                 label: 'LinkedIn',
                 href: 'https://www.linkedin.com/in/areeba-yaseen-6523552b5/',
@@ -123,7 +110,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright � ${new Date().getFullYear()} Physical AI & Humanoid Robotics Textbook, All Rights Reserved.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics Textbook, All Rights Reserved.`,
       },
       prism: {
         theme: prismThemes.github,

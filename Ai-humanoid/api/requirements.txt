@@ -1,5 +1,6 @@
 # Python dependencies for the FastAPI backend
 # Add your required Python packages here (e.g., fastapi, uvicorn, qdrant-client, psycopg2-binary, openai)
 
+#hello
 fastapi~=0.104.1
 uvicorn~=0.23.2

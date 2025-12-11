@@ -1,25 +1,23 @@
-# Dependencies
 node_modules/
 package-lock.json
 
 # Docusaurus build artifacts
 .docusaurus/
-Ai-humanoid/.docusaurus/
-Ai-humanoid/build/
 
-# Environment variables
+# Do NOT ignore build for Vercel
+# build/
+
+# Environment
 .env*
 
-# OS generated files
+# OS
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# IDE files
+# IDE
 .vscode/
 .idea/
-*.swp
-*.swo
 
 # Logs
 *.log
@@ -27,5 +25,5 @@ desktop.ini
 # Vercel
 .vercel/
 
-# Rag Chatbot (nested git repo)
+# Rag Chatbot
 rag-chatbot/

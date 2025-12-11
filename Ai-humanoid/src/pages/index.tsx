@@ -19,7 +19,7 @@ export default function Home(): JSX.Element {
           <p className={styles.heroSubtitle}>{siteConfig.tagline}</p>
 
           <div className={styles.heroButtons}>
-            <Link className="button button--primary button--lg" to="/docs/docs/Introduction/introduction">
+            <Link className="button button--primary button--lg" to="/docs/Introduction/introduction">
               Start Reading 📖
             </Link>
           </div>
@@ -146,7 +146,7 @@ export default function Home(): JSX.Element {
               </p>
 
               <div className={styles.ctaButtons}>
-                <Link className="button button--secondary button--lg" to="/docs/Introduction/intro">
+                <Link className="button button--secondary button--lg" to="/docs/intro/introduction">
                   Begin Reading
                 </Link>
                 <Link className="button text-white button--secondary button--outline button--lg" to="/docs">

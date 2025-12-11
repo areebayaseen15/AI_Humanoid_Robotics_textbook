@@ -1,0 +1,7 @@
+{
+  "framework": "docusaurus",
+  "rootDirectory": "Ai-humanoid",
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "outputDirectory": "build"
+}
